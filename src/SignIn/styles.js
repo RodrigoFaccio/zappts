@@ -7,30 +7,31 @@ export const Container = styled.div`
   justify-content: center;
   max-width: 100%;
   margin-left:0;
+  height:900px;
+  text-align:center;
 
-  @media (min-width: 1024px) {
-    flex-wrap: nowrap;
-  }
+  
 `;
 
 export const BoxImage = styled.div`
   display: inline;
   flex-direction: column;
   float: left;
-  height:100%;
+  max-width:50%;
+
   
 
-  @media (max-width: 375px) {
+  @media (max-width:770px) {
    display:none;
 
     
   }
 
-  @media (min-width: 1024px) {
-    width: ${px2vw(600)};
+  @media (max-width: 1024px) {
+   max-width:50%;
     min-height: ${px2vw(300)};
-    height: 100%;
   }
+ 
 `;
 
 export const BoxForm = styled.div`
@@ -53,18 +54,18 @@ text-align:center;
   }
 
   @media (min-width: 1024px) {
-    width: ${px2vw(600)};
+    width: ${px2vw(300)};
     min-height: ${px2vw(300)};
     height: 100%;
   }
 `;
 export const Imagem = styled.img`
-  max-width:80%;
-  width:700px;
-  height:770px;
+  max-width:100%;
+  height:660px;
+ 
   max-height:100%;
-  @media (min-width: 1024px) {
-    font-size: 1rem;
+  @media(max-width:845){
+    display:none;
   }
 `;
 export const Logo = styled.h2`
@@ -101,14 +102,13 @@ export const  Input = styled.input`
   max-width:90%;
   &:focus{
     border:none;
-    outline: none;
   }
 
 
 `;
-export const Welcome = styled.h1`
+export const Welcome = styled.h2`
   color:#707070;
-  margin-bottom:50px;
+  margin-bottom:10px;
   max-width:95%;
   @media (max-width: 375px) {
   font-size: ${px2vw(100)}
@@ -132,7 +132,7 @@ text-align:center;
 justify-content:center;
 align-items:center;
 text-align:center;
-margin-left:25%;
+margin-left:30%;
 
 margin-top:20px;
   background-color:gray;
@@ -150,6 +150,48 @@ export const ForgotPassword = styled.p`
 margin-top:10px;
 
     font-size:10px;
-    margin-left:150px;
+    margin-left:180px;
 
+`;
+
+export const TextText = styled.p`
+    color:#707070;
+    margin-left:-20px;
+    margin-top:30px;
+
+`;
+export const DivGoogle = styled.div`
+   margin-top:30px;
+`;
+export const ButtonGoogle = styled.button`
+   margin-top:30px;
+   background-color:white;
+   border-radius:50px;
+   
+`;
+export const Item =  styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: #683bb7;
+  color: #fff;
+  margin: 15px;
+  font-size: 4em;
+`;
+export const Cadastro =  styled.div`
+     color:#707070;
+     margin-top:40px;
+     font-size:12px;
+`;
+export const TextError =  styled.div`
+     color:red;
+     font-size:12px;
+     margin-top:4px;
+     margin-bottom:15px;
+`;
+export const Invison =  styled.h2`
+margin-left:240px;
+margin-bottom:40px;
 `;
